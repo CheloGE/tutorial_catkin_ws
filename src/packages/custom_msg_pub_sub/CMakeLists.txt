@@ -79,7 +79,7 @@ target_link_libraries(${PROJECT_NAME}_publisher_node ${catkin_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_subscriber_node ${catkin_LIBRARIES})
 
 ## catkin creates several files which are used as flags to determine if something has been built or not. 
-## The flags for messages are always following the same naming convention: "<package_name>_generate_messages_cpp"
+## The flags for messages generatedd are always following the same naming convention: "<package_name>_generate_messages_cpp"
 ## Therefore This will generate message header file before building the target (outout -o)
 add_dependencies(${PROJECT_NAME}_publisher_node ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(${PROJECT_NAME}_subscriber_node ${PROJECT_NAME}_generate_messages_cpp)
